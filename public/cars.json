@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "make": "Ford",
+    "model": "F-150",
+    "year": "2002",
+    "color": "White"
+  },
+  {
+    "id": 2,
+    "make": "Mazda",
+    "model": "Miata",
+    "year": "1994",
+    "color": "Red"
+  },
+  {
+    "id": 3,
+    "make": "Toyota",
+    "model": "Camry",
+    "year": "2020",
+    "color": "Silver"
+  },
+  {
+    "id": 4,
+    "make": "Honda",
+    "model": "Civic",
+    "year": "2018",
+    "color": "Blue"
+  },
+  {
+    "id": 5,
+    "make": "Chevrolet",
+    "model": "Corvette",
+    "year": "2021",
+    "color": "Yellow"
+  },
+  {
+    "id": 6,
+    "make": "Subaru",
+    "model": "Outback",
+    "year": "2019",
+    "color": "Green"
+  },
+  {
+    "id": 7,
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": "2022",
+    "color": "Black"
+  },
+  {
+    "id": 8,
+    "make": "Jeep",
+    "model": "Wrangler",
+    "year": "2017",
+    "color": "Orange"
+  },
+  {
+    "id": 9,
+    "make": "Volkswagen",
+    "model": "Beetle",
+    "year": "1967",
+    "color": "Cream"
+  },
+  {
+    "id": 10,
+    "make": "BMW",
+    "model": "3 Series",
+    "year": "2023",
+    "color": "Gray"
+  },
+  {
+    "id": 11,
+    "make": "Nissan",
+    "model": "Leaf",
+    "year": "2020",
+    "color": "White"
+  },
+  {
+    "id": 12,
+    "make": "Hyundai",
+    "model": "Tucson",
+    "year": "2021",
+    "color": "Blue"
+  },
+  {
+    "id": 13,
+    "make": "Porsche",
+    "model": "911",
+    "year": "2016",
+    "color": "Red"
+  },
+  {
+    "id": 14,
+    "make": "Kia",
+    "model": "Soul",
+    "year": "2015",
+    "color": "Purple"
+  }
+]
