@@ -3,7 +3,7 @@ import { useState } from "react";
 import { fetchUniversities } from "./universityApi";
 import { useQuery } from "@tanstack/react-query";
 import { University } from "./types";
-import CountrySelect from "./_components/CountrySelect";
+import CountrySelect from "../_components/CountrySelect";
 
 export default function Home() {
   const [query, setQuery] = useState("");
