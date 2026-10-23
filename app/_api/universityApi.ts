@@ -1,4 +1,4 @@
-import { University } from "./types";
+import { University } from "../_type/universityTypes";
 
 export async function fetchUniversities(search: string): Promise<University[]> {
   try{

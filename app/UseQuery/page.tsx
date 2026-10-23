@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import { fetchUniversities } from "./universityApi";
+import { fetchUniversities } from "../_api/universityApi";
 import { useQuery } from "@tanstack/react-query";
-import { University } from "./types";
+import { University } from "../_type/universityTypes";
 import CountrySelect from "../_components/CountrySelect";
 
 export default function Home() {

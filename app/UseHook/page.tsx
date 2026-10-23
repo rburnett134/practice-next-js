@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import RenderCars from "./RenderCars";
-import { fetchCars } from "./api";
+import { fetchCars } from "../_api/carsApi";
 
 export default function CarsList() {
   // const [cars, setCars] = useState<car[]>([]);

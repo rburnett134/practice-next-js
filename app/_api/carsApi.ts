@@ -1,4 +1,4 @@
-import { car } from "./types";
+import { car } from "../_type/carTypes";
 
 export async function fetchCars(): Promise<car[]> {
   const response = await fetch("http://localhost:3000/cars.json");

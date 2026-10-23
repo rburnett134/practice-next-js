@@ -1,6 +1,6 @@
 "use client";
 
-import { car } from "./types";
+import { car } from "../_type/carTypes";
 import { use } from "react";
 
 export default function RenderCars({carsPromise} : {carsPromise: Promise<car[]>}) {

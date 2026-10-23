@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { fetchUniversities } from "../universityApi";
+import { fetchUniversities } from "../_api/universityApi";
 
 export default function SsrList() {
   return (
