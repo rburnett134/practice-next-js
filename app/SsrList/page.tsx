@@ -1,4 +1,4 @@
-import { fetchUniversities } from "../universityApi";
+import { fetchUniversities } from "../UseQuery/universityApi";
 
 export default async function SsrList() {
   const universities = await fetchUniversities("");
