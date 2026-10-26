@@ -1,37 +1,23 @@
-import { Suspense } from "react";
+import Search from "../_components/Search";
+import { Suspense } from 'react';
+import CarList from "./CarList";
 
-type SearchParams = {
-  q?: string;
-  page?: string;
-};
-
-export default function PracticeSearchParams({
-  searchParams,
-}: {
-  searchParams?: Promise<SearchParams>;
-}) {
-  return (
-    <Suspense fallback={<p className="p-8">Loading search params…</p>}>
-      <PracticeSearchParamsContent searchParams={searchParams} />
-    </Suspense>
-  );
-}
-
-async function PracticeSearchParamsContent({
-  searchParams,
-}: {
-  searchParams?: Promise<SearchParams>;
-}) {
-  const params = searchParams ? await searchParams : {};
-  const query = params.q ?? "";
-
-  return (
-    <main className="p-8">
-      <h1 className="text-2xl font-bold">Practice Search Params</h1>
-      <p className="mt-4">Current query: {query || "(none)"}</p>
-      <p className="mt-2 text-sm text-gray-600">
-        URL example: ?q=next&page=2
-      </p>
-    </main>
+export default async function PracticeSearchParams(
+  { searchParams }: 
+  { 
+    searchParams?: Promise<{
+      query?: string;
+    }> 
+  }) {
+  return(
+    <>
+      <Suspense fallback={<div>Loading Search Bar...</div>}>
+        <Search />
+      </Suspense>
+      <h1>Cars:</h1>
+      <Suspense fallback={<div>Loading List...</div>}>
+        <CarList searchParams={searchParams}/>
+      </Suspense>
+    </>
   );
 }
