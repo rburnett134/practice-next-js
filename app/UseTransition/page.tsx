@@ -1,9 +1,10 @@
 "use client";
-import { Suspense, useState, use, useTransition } from "react";
+import { Suspense, useState, useEffect, use } from "react";
 import { fetchCars } from "../_api/carsApi";
 import { car } from "../_type/carTypes";
 import {
   Tabs,
+  TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
@@ -23,12 +24,9 @@ const CarsList = ({carsPromise}: {carsPromise: Promise<car[]>}) => {
 
 export default function UseTransition() {
   const [carsPromise, setCarsPromise] = useState<Promise<car[]>>(() => fetchCars("Ford"));
-  const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (newValue: string) => {
-    startTransition(() => {
-      setCarsPromise(fetchCars(newValue));
-    });
+    setCarsPromise(fetchCars(newValue));
   }
 
   return (
@@ -37,7 +35,6 @@ export default function UseTransition() {
           <TabsTrigger value="Ford">Ford</TabsTrigger>
           <TabsTrigger value="Toyota">Toyota</TabsTrigger>
         </TabsList>
-        {isPending && <p role="status">Loading cars...</p>}
         <Suspense fallback={<div>Loading...</div>}>
           <CarsList carsPromise={carsPromise} />
         </Suspense>
