@@ -11,6 +11,7 @@ export default function Home() {
         <Link href="/SsrList">SSR List</Link>
         <Link href="/UseHook">Use Hook</Link>
         <Link href="/UseQuery">Use Query</Link>
+        <Link href="/UseTransition">Use Transition</Link>
       </main>
     </div>
   );
